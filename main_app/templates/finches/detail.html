@@ -4,5 +4,7 @@
   <h1>Type: {{ finch.type }}</h1>
   <h2>Color: {{ finch.color }}</h2>
   <h3>About:</h3><p>{{ finch.info }}</p>
+  <a href="{% url 'finch_update' finch.id %}">Edit</a>
+  <a href="{% url 'finch_delete' finch.id %}">Delete</a>
 </div>
 {% endblock %}
